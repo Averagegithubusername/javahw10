@@ -89,8 +89,8 @@ public class Radio {
         this.stationsNumber = stationsNumber;
     }
 
-    public void setMaxStation(int maxStation) {
-        this.maxStation = maxStation;
+    public void setMaxStation(int stationsNumber) {
+        maxStation = stationsNumber - 1;
     }
 
     public void setOn(boolean on) {

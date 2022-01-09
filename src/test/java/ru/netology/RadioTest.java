@@ -134,7 +134,7 @@ class RadioTest {
     void shouldSetMaxStation() {
         Radio radio = new Radio();
         radio.setMaxStation(15);
-        int expected = 15;
+        int expected = 14;
         int actual = radio.getMaxStation();
         assertEquals(expected, actual);
     }
