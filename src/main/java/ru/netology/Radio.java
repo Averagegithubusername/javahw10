@@ -22,6 +22,18 @@ public class Radio {
         return currentVolume;
     }
 
+    public int getStationsNumber() {
+        return stationsNumber;
+    }
+
+    public int getMaxStation() {
+        return maxStation;
+    }
+
+    public boolean isOn() {
+        return on;
+    }
+
     public void setCurrentStation(int currentStation) {
         maxStation = stationsNumber - 1;
         if (currentStation > maxStation) {
@@ -73,8 +85,12 @@ public class Radio {
         }
     }
 
-    public boolean isOn() {
-        return on;
+    public void setStationsNumber(int stationsNumber) {
+        this.stationsNumber = stationsNumber;
+    }
+
+    public void setMaxStation(int maxStation) {
+        this.maxStation = maxStation;
     }
 
     public void setOn(boolean on) {

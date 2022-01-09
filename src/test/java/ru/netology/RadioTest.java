@@ -122,6 +122,24 @@ class RadioTest {
     }
 
     @Test
+    void  shouldSetStationsNumber() {
+        Radio radio = new Radio();
+        radio.setStationsNumber(50);
+        int expected = 50;
+        int actual = radio.getStationsNumber();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldSetMaxStation() {
+        Radio radio = new Radio();
+        radio.setMaxStation(15);
+        int expected = 15;
+        int actual = radio.getMaxStation();
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void shouldTurnOn() {
         Radio radio = new Radio();
         radio.setOn(true);
